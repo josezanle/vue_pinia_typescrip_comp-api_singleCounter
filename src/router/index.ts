@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory, RouteRecordRaw} from "vue-router";
+import {createRouter, createWebHashHistory, RouteRecordRaw} from "vue-router";
 import HomeView from '../components/HomeView.vue'
 import CounterView from '../components/CounterView.vue'
 
@@ -16,7 +16,7 @@ const routes: RouteRecordRaw[]  = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes
 })
 export default router
